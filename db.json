@@ -64,7 +64,14 @@
                 "fuelType":null,
                 "cost":625.000,
                 "costPerLtr":9.879
-                } ,
+                } 
+         
+        ]
+    },
+    { 
+        "id": 3,
+        "startDate": "14/09/2019",
+        "data": [
             {
                 "id":15,
                 "vehicle":"[005]Daihatsu Xenia",
@@ -75,13 +82,7 @@
                 "fuelType":null,
                 "cost":625.000,
                 "costPerLtr":9.879
-            } 
-        ]
-    },
-    { 
-        "id": 3,
-        "startDate": "14/09/2019",
-        "data": [
+            } ,
             {
                 "id":16,
                 "vehicle":"[001]Toyota Avanzas",
@@ -91,7 +92,14 @@
                 "fuelType":null,
                 "cost":625.000,
                 "costPerLtr":9.879
-            },
+            }
+           
+        ]
+    },
+    { 
+        "id": 4,
+        "startDate": "14/10/2019",
+        "data": [
             {
                 "id":17,
                 "vehicle":"[005]Daihatsu Xenia",
@@ -102,13 +110,7 @@
                 "fuelType":null,
                 "cost":625.000,
                 "costPerLtr":9.879
-            } 
-        ]
-    },
-    { 
-        "id": 4,
-        "startDate": "14/10/2019",
-        "data": [
+            } ,
             {"id":18,
                 "vehicle":"[001]Toyota Avanzas",
                 "time":"10:23 AM",
@@ -129,7 +131,14 @@
                 "fuelType":null,
                 "cost":625.000,
                 "costPerLtr":9.879
-                } ,
+                } 
+           
+        ]
+    },
+    { 
+        "id": 5,
+        "startDate": "14/11/2019",
+        "data": [
             {
                 "id":20,
                 "vehicle":"[005]Daihatsu Xenia",
@@ -139,13 +148,8 @@
                 "status":"In shop",
                 "fuelType":null,
                 "cost":625.000,
-                "costPerLtr":9.879} 
-        ]
-    },
-    { 
-        "id": 5,
-        "startDate": "14/11/2019",
-        "data": [
+                "costPerLtr":9.879
+            } ,
             {
                 "id":21,
                 "vehicle":"[001]Toyota Avanzas",
@@ -156,7 +160,14 @@
                 "fuelType":null,
                 "cost":625.000,
                 "costPerLtr":9.879
-            },
+            }
+            
+        ]
+    },
+    { 
+        "id": 6,
+        "startDate": "14/12/2019",
+        "data": [
             {
                 "id":22,
                 "vehicle":"[005]Daihatsu Xenia",
@@ -166,13 +177,7 @@
                 "status":"In shop","fuelType":null,
                 "cost":625.000,
                 "costPerLtr":9.879
-            } 
-        ]
-    },
-    { 
-        "id": 6,
-        "startDate": "14/12/2019",
-        "data": [
+            } ,
             {
                 "id":23,
                 "vehicle":"[001]Toyota Avanzas",
@@ -194,7 +199,14 @@
                 "fuelType":null,
                 "cost":625.000,
                 "costPerLtr":9.879
-                } ,
+                } 
+           
+        ]
+    },
+    { 
+        "id": 7,
+        "startDate": "14/13/2019",
+        "data": [
             {
                 "id":25,
                 "vehicle":"[005]Daihatsu Xenia",
@@ -204,13 +216,8 @@
                 "status":"In shop",
                 "fuelType":null,
                 "cost":625.000,
-                "costPerLtr":9.879} 
-        ]
-    },
-    { 
-        "id": 7,
-        "startDate": "14/13/2019",
-        "data": [
+                "costPerLtr":9.879
+                } ,
             {
                 "id":26,
                 "vehicle":"[001]Toyota Avanzas",
@@ -221,7 +228,14 @@
                 "fuelType":null ,
                 "cost":625.000,
                 "costPerLtr":9.879
-            },
+            }
+            
+        ]
+    },
+    { 
+        "id": 8,
+        "startDate": "14/14/2019",
+        "data": [
             {
                 "id":27,
                 "vehicle":"[005]Daihatsu Xenia",
@@ -232,13 +246,7 @@
                 "fuelType":null,
                 "cost":625.000,
                 "costPerLtr":9.879
-            } 
-        ]
-    },
-    { 
-        "id": 8,
-        "startDate": "14/14/2019",
-        "data": [
+            } ,
             {
                 "id":28,
                 "vehicle":"[001]Toyota Avanzas",
@@ -280,6 +288,45 @@
             },
             {
                 "id":31,
+                "vehicle":"[005]Daihatsu Xenia",
+                "time":"09:58 AM",
+                "odometer":20.85,
+                "volume":77,
+                "status":"In shop",
+                "fuelType":null,
+                "cost":625.000,
+                "costPerLtr":9.879
+            } 
+        ]
+    },
+    { 
+        "id": 10,
+        "startDate": "14/16/2019",
+        "data": [
+            {
+                "id":31,
+                "vehicle":"[001]Toyota Avanzas",
+                "time":"10:23 AM",
+                "odometer":75.59,
+                "volume":45,
+                "status":"Active",
+                "fuelType":null,
+                "cost":625.000,
+                "costPerLtr":9.879
+            },
+            {
+                "id":32,
+                "vehicle":"[005]Daihatsu Xenia",
+                "time":"09:58 AM",
+                "odometer":20.85,
+                "volume":77,
+                "status":"In shop",
+                "fuelType":null,
+                "cost":625.000,
+                "costPerLtr":9.879
+            } ,
+            {
+                "id":33,
                 "vehicle":"[005]Daihatsu Xenia",
                 "time":"09:58 AM",
                 "odometer":20.85,

@@ -2,7 +2,26 @@
 	margin-top: 10rem;
 }
 
-.gray  a,
-.gray  a:hover {
-    background-color: #F5F5F5;
+color{
+    color: #061b1b;
+}
+.nav-pills .nav-link.active .FaFileAlt, .nav-pills .show>.nav-link .FaFileAlt{
+    color: #adbef0;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000;
+    border-left: #adbef0 2px solid;
+    background-color: #f8f9fa;
+    font-weight: 500;
+}
+.nav-pills .nav-link {
+    border-radius: 0;
+    /* margin-left: 2px; */
+}
+a {
+    color: #6c757d;
+}
+a:hover {
+    color: #000;
+    font-weight: 500;
 }

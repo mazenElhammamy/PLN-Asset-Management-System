@@ -9,7 +9,6 @@ export function getAll() {
    };
    axios(options)
       .then((res) => {
-          console.log(res.data)
         dispatcher.dispatch({
             type: "GET_ALL_Data",
             data: res.data,
