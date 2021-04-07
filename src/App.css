@@ -1,3 +1,10 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .mt-10 {
 	margin-top: 10rem;
 }
@@ -19,9 +26,82 @@ color{
     /* margin-left: 2px; */
 }
 a {
-    color: #6c757d;
+    color: #c3ced8;
 }
 a:hover {
     color: #000;
     font-weight: 500;
+  
+}
+
+
+.MuiTablePagination-spacer {
+    flex:  none;
+}
+.MuiTablePagination-actions {   
+    margin-left: 0px;
+}
+.MuiIconButton-root.Mui-disabled {
+   color: rgba(0, 0, 0, 0.26);   
+}
+.MuiIconButton-root.Mui-disabled ,
+[type=button]:not(:disabled), [type=reset]:not(:disabled), 
+[type=submit]:not(:disabled), button:not(:disabled){
+    
+    background-color: transparent;
+    background-color: white;
+    border: 1px solid #c3ced8;
+    border-radius: 4px;
+    padding: .4rem;
+}
+.MuiSvgIcon-root {
+    font-size: 2rem;
+}
+.MuiToolbar-root.MuiToolbar-regular.MuiTablePagination-toolbar.MuiToolbar-gutters
+,.col-lg-2 .App form
+{
+ margin: auto;
+    max-width: max-content;
+}
+.dropdown-toggle::after {
+    vertical-align: .255em;
+    margin-left: 1.5rem;
+}
+/* .col-lg-2 .App  {
+    margin-left: 10px;
+} */
+.flag-icon {
+    margin-left: 4px;
+}
+form .dropdown .dropdown-toggle{
+    max-width: max-content !important;
+    height: 40px !important;
+    /* padding: 0 4.rem; */
+}
+form .dropdown{
+    margin-top: .4rem;
+}
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+}
+p.MuiTypography-root.MuiTablePagination-caption.MuiTypography-body2.MuiTypography-colorInherit 
+,.MuiIconButton-root.Mui-disabled, [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled)
+ {
+    color: #6c757d;
+}
+.flag-icon-eg,.flag-icon-gb,.flag-icon-gr ,.flag-icon-us {
+    width: 30px;
+    background-position: center;
+    background-size: cover;
+}
+.navbar-toggler-icon{
+    color: #000 !important;
+}
+.navbar-toggler:focus:not(:focus-visible){
+    color: transparent;
+}
+.navbar-toggler{
+    border-radius: 50% !important;
+    border: 1px solid #adbef0 !important
 }
