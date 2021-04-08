@@ -105,3 +105,10 @@ p.MuiTypography-root.MuiTablePagination-caption.MuiTypography-body2.MuiTypograph
     border-radius: 50% !important;
     border: 1px solid #adbef0 !important
 }
+
+/* form */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
