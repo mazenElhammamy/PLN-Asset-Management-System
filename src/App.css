@@ -1,8 +1,12 @@
-
+body {
+    overflow-x: hidden; 
+    
+  }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .mt-10 {
@@ -13,17 +17,17 @@ color{
     color: #061b1b;
 }
 .nav-pills .nav-link.active .FaFileAlt, .nav-pills .show>.nav-link .FaFileAlt{
-    color: #adbef0;
+    color: #4D7CFE;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #000;
-    border-left: #adbef0 2px solid;
+    border-left: #4D7CFE 2px solid;
     background-color: #f8f9fa;
     font-weight: 500;
+    
 }
 .nav-pills .nav-link {
     border-radius: 0;
-    /* margin-left: 2px; */
 }
 a {
     color: #c3ced8;
@@ -67,9 +71,7 @@ a:hover {
     vertical-align: .255em;
     margin-left: 1.5rem;
 }
-/* .col-lg-2 .App  {
-    margin-left: 10px;
-} */
+
 .flag-icon {
     margin-left: 4px;
 }
@@ -112,3 +114,8 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.pl-2 {
+    padding-left: 28px;
+    
+  }

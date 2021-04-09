@@ -1,344 +1,146 @@
 {
   "system": [
-    { 
-        "id": 1,
-        "startDate": "14/07/2019",
-        "data": [
-            {
-                "id":10,
-                "vehicle":"[001]Toyota Avanzas",
-                "time":"10:23 AM",
-                "odometer":75.59,
-                "volume":45,
-                "status":"Active",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            },
-            {
-                "id":11,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            } 
-        ]
+    {
+      "id": 4,
+      "time": "10:57 PM",
+      "status": "Out of service",
+      "cost": "59409.431",
+      "name": "[001]Daihatsu Xenia",
+      "date": "2020-04-20",
+      "Total_Km": 70.55,
+      "volume": 62
     },
-    { 
-        "id": 2,
-        "startDate": "14/08/2019",
-        "data": [
-            {
-                "id":12,
-                "vehicle":"[001]Toyota Avanzas",
-                "time":"10:23 AM",
-                "odometer":75.59
-                ,"volume":45,
-                "status":"Active",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            },
-            {
-                "id":13,
-                "vehicle":"[001]Toyota Avanzas",
-                "time":"10:23 AM",
-                "odometer":75.59
-                ,"volume":45,
-                "status":"Active",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            },
-            {
-                "id":14,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-                } 
-         
-        ]
+    {
+      "id": 5,
+      "date": "2020-04-20",
+      "name": "[002]Toyota Avanzas",
+      "status": "In shop",
+      "time": "10:57 PM",
+      "Total_Km": 19.5,
+      "volume": 70,
+      "cost": "59409.431",
+      "fuelType": ""
     },
-    { 
-        "id": 3,
-        "startDate": "14/09/2019",
-        "data": [
-            {
-                "id":15,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            } ,
-            {
-                "id":16,
-                "vehicle":"[001]Toyota Avanzas",
-                "time":"10:23 AM",
-                "odometer":75.59,
-                "volume":45,"status":"Active",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            }
-           
-        ]
+    {
+      "id": 6,
+      "date": "2020-02-06",
+      "name": "[003]Toyota Avanzas",
+      "status": "Active",
+      "time": "10:57 PM",
+      "Total_Km": 19.5,
+      "volume": 48,
+      "cost": "59409.431",
+      "fuelType": ""
     },
-    { 
-        "id": 4,
-        "startDate": "14/10/2019",
-        "data": [
-            {
-                "id":17,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            } ,
-            {"id":18,
-                "vehicle":"[001]Toyota Avanzas",
-                "time":"10:23 AM",
-                "odometer":75.59,
-                "volume":45,
-                "status":"Active",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            },
-            {
-                "id":19,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-                } 
-           
-        ]
+    {
+      "id": 7,
+      "date": "2020-02-06",
+      "name": "[004]Daihatsu Xenia",
+      "status": "In Shop",
+      "time": "10:57 PM",
+      "Total_Km": 25.5,
+      "volume": 80,
+      "cost": "59409.431",
+      "fuelType": ""
     },
-    { 
-        "id": 5,
-        "startDate": "14/11/2019",
-        "data": [
-            {
-                "id":20,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            } ,
-            {
-                "id":21,
-                "vehicle":"[001]Toyota Avanzas",
-                "time":"10:23 AM",
-                "odometer":75.59,
-                "volume":45,
-                "status":"Active",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            }
-            
-        ]
+    {
+      "id": 8,
+      "date": "2020-02-20",
+      "name": "[005]Toyota Avanzas",
+      "status": "Active",
+      "time": "10:57 PM",
+      "Total_Km": 10.5,
+      "volume": 45,
+      "cost": "59409.431",
+      "fuelType": ""
     },
-    { 
-        "id": 6,
-        "startDate": "14/12/2019",
-        "data": [
-            {
-                "id":22,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop","fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            } ,
-            {
-                "id":23,
-                "vehicle":"[001]Toyota Avanzas",
-                "time":"10:23 AM",
-                "odometer":75.59,
-                "volume":45,
-                "status":"Active",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            },
-            {
-                "id":24,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-                } 
-           
-        ]
+    {
+      "id": 9,
+      "date": "2020-02-20",
+      "name": "[006]Daihatsu Xenia",
+      "status": "Out of service",
+      "time": "10:57 PM",
+      "Total_Km": 70.5,
+      "volume": 62,
+      "cost": "59409.431",
+      "fuelType": ""
     },
-    { 
-        "id": 7,
-        "startDate": "14/13/2019",
-        "data": [
-            {
-                "id":25,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-                } ,
-            {
-                "id":26,
-                "vehicle":"[001]Toyota Avanzas",
-                "time":"10:23 AM",
-                "odometer":75.59,
-                "volume":45,
-                "status":"Active",
-                "fuelType":null ,
-                "cost":625.000,
-                "costPerLtr":9.879
-            }
-            
-        ]
+    {
+      "id": 10,
+      "date": "2020-02-20",
+      "name": "[007]Daihatsu Xenia",
+      "status": "Active",
+      "time": "10:57 PM",
+      "Total_Km": 20.3,
+      "volume": 77,
+      "cost": "599.431",
+      "fuelType": ""
     },
-    { 
-        "id": 8,
-        "startDate": "14/14/2019",
-        "data": [
-            {
-                "id":27,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            } ,
-            {
-                "id":28,
-                "vehicle":"[001]Toyota Avanzas",
-                "time":"10:23 AM",
-                "odometer":75.59,
-                "volume":45,
-                "status":"Active",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            },
-            {
-                "id":29,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            } 
-        ]
+    {
+      "id": 11,
+      "date": "2020-01-06",
+      "name": "[008]Toyota Avanzas",
+      "status": "Active",
+      "time": "10:57 PM",
+      "Total_Km": 19.5,
+      "volume": 48,
+      "cost": "59409.431",
+      "fuelType": ""
     },
-    { 
-        "id": 9,
-        "startDate": "14/15/2019",
-        "data": [
-            {
-                "id":30,
-                "vehicle":"[001]Toyota Avanzas",
-                "time":"10:23 AM",
-                "odometer":75.59,
-                "volume":45,
-                "status":"Active",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            },
-            {
-                "id":31,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            } 
-        ]
+    {
+      "id": 12,
+      "date": "2020-01-06",
+      "name": "[009]Daihatsu Xenia",
+      "status": "Active",
+      "time": "10:57 PM",
+      "Total_Km": 19.5,
+      "volume": 48,
+      "cost": "59409.431",
+      "fuelType": ""
     },
-    { 
-        "id": 10,
-        "startDate": "14/16/2019",
-        "data": [
-            {
-                "id":31,
-                "vehicle":"[001]Toyota Avanzas",
-                "time":"10:23 AM",
-                "odometer":75.59,
-                "volume":45,
-                "status":"Active",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            },
-            {
-                "id":32,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            } ,
-            {
-                "id":33,
-                "vehicle":"[005]Daihatsu Xenia",
-                "time":"09:58 AM",
-                "odometer":20.85,
-                "volume":77,
-                "status":"In shop",
-                "fuelType":null,
-                "cost":625.000,
-                "costPerLtr":9.879
-            } 
-        ]
+    {
+      "id": 13,
+      "date": "2020-01-20",
+      "name": "[0010]Toyota Avanzas",
+      "status": "Active",
+      "time": "10:57 PM",
+      "Total_Km": 10.5,
+      "volume": 45,
+      "cost": "59409.431",
+      "fuelType": ""
+    },
+    {
+      "id": 15,
+      "date": "2020-01-20",
+      "name": "[0011]Toyota Avanzas",
+      "status": "In shop",
+      "time": "10:57 PM",
+      "Total_Km": 19.5,
+      "volume": 70,
+      "cost": "59409.431",
+      "fuelType": ""
+    },
+    {
+      "id": 17,
+      "date": "2020-08-06",
+      "name": "[0012]Daihatsu Xenia",
+      "status": "In Shop",
+      "time": "10:57 PM",
+      "Total_Km": 25.5,
+      "volume": 80,
+      "cost": "59409.431",
+      "fuelType": ""
+    },
+    {
+      "id": 19,
+      "date": "2020-08-20",
+      "name": "[0013]Daihatsu Xenia",
+      "status": "Out of service",
+      "time": "10:57 PM",
+      "Total_Km": 70.5,
+      "volume": 62,
+      "cost": "59409.431",
+      "fuelType": ""
     }
-   
-   
   ]
 }

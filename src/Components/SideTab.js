@@ -21,7 +21,7 @@ export default class SideTab extends React.Component {
       id="navbarSupportedContent"
       >
             <div 
-            className="nav flex-column nav-pills h-100 gray bg-white" 
+            className="nav flex-column nav-pills h-100 gray bg-white m-4" 
             id="v-pills-tab" role="tablist" 
             aria-orientation="vertical" 
             >
@@ -36,7 +36,7 @@ export default class SideTab extends React.Component {
 
               <h6 className="p-3 text-muted"><FaCar className="mr-2"/> VEHICLES</h6>
               <Link  
-              className="nav-link active" 
+              className="nav-link active " 
               id="v-pills-home-tab" 
               data-toggle="pill" 
               to="#"  
@@ -44,7 +44,7 @@ export default class SideTab extends React.Component {
               aria-controls="v-pills-home" 
               aria-selected="true"><span><FaFileAlt className="FaFileAlt mr-2"/> REPORT</span></Link>
               <h6 className="p-3 text-muted">Operating Cost</h6>
-              <Link to="#" className="nav-link" data-toggle="pill"  role="tab"  aria-selected="false"  >Fuel History</Link>
+              <Link to="#" className="nav-link active" data-toggle="pill"  role="tab"  aria-selected="true"  >Fuel History</Link>
               <Link to="#" className="nav-link" data-toggle="pill"  role="tab"  aria-selected="false"  >Total Cost</Link>
               <Link to="#" className="nav-link"  data-toggle="pill"  role="tab"  aria-selected="false"  >Cost/Meter</Link>
               <Link to="#"className="nav-link"  data-toggle="pill" role="tab"  aria-selected="false"  >Expesne Summary</Link>
