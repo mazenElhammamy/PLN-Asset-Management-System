@@ -14,6 +14,7 @@ import FormPopup from './FormPopup';
 import FlagIcons from './Flags';
 import Sort from './Sort';
 
+const DATE_OPTIONS = { weekday: 'short', year: 'numeric', month: 'short', day: '2-digit' };
 const HEADERS = ["Vehicle", "Time", "Total Km", "Volume", "Cost", "Actios"];
 const ROWS_NUMBER_PER_PAGE = 6;
 
@@ -24,7 +25,7 @@ export default class VehicleTable extends Component {
             dataLength: 0,
             page: 0,
             dateMap: {},
-            pagesMap:{},
+            pagesMap: {},
         }
         this.getData = this.getData.bind(this);
         this.getTableHeaders = this.getTableHeaders.bind(this);
@@ -32,7 +33,7 @@ export default class VehicleTable extends Component {
         this.handleChangePage = this.handleChangePage.bind(this);
         this.getTableRow = this.getTableRow.bind(this);
         this.getPagesMap = this.getPagesMap.bind(this);
-
+        this.getStatusColor = this.getStatusColor.bind(this);
     }
     componentDidMount() {
         DataActions.getAll();
@@ -49,7 +50,7 @@ export default class VehicleTable extends Component {
     handleDelete(id) {
         DataActions.deleteOne(id);
     }
-    getPagesMap(dateMap){
+    getPagesMap(dateMap) {
         var count = 0;
         var dataIndex = 0;
         var dateIndex = 0;
@@ -68,13 +69,13 @@ export default class VehicleTable extends Component {
                 count += dataLength;
                 if (count > ROWS_NUMBER_PER_PAGE) {
                     const reminder = count - ROWS_NUMBER_PER_PAGE;
-                        count = reminder;
-                        pageNumber++;
-                        dataIndex = dataLength - reminder;
-                        pagesMap[pageNumber] = {
-                            dataIndex,
-                            dateIndex,
-                        }
+                    count = reminder;
+                    pageNumber++;
+                    dataIndex = dataLength - reminder;
+                    pagesMap[pageNumber] = {
+                        dataIndex,
+                        dateIndex,
+                    }
                 } else if (count === ROWS_NUMBER_PER_PAGE) { // reset count and new page
                     count = 0;
                     pageNumber++;
@@ -86,7 +87,7 @@ export default class VehicleTable extends Component {
     }
     getData() {
         const allData = DataStore.getAll();
-        const pagesMap= this.getPagesMap(allData.dateMap);
+        const pagesMap = this.getPagesMap(allData.dateMap);
         this.setState({ dataLength: allData.dataLength, dateMap: allData.dateMap, pagesMap });
     }
 
@@ -101,39 +102,60 @@ export default class VehicleTable extends Component {
             </TableRow>
         )
     }
-    getTableRow(row){
-        return  <TableRow key={row.id}>
-        <TableCell>
-            <div className="d-flex row">
-                <div className="  col-2">
-                    <img alt="..." style={{
-                        borderRadius: "50%",
-                        width: "50px",
-                        height: "50px"
-                    }}
-                        src="https://cars.usnews.com/pics/size/640x420/static/images/article/202002/128389/1_title_2020_kia_optima.jpg"
-                    />
+    getStatusColor(status){
+        var statusStyle = {};
+        switch (status) {
+            case "Active":
+                statusStyle = { color: "#21A11E" }
+                break;
+            case "In shop":
+                statusStyle = { color: "#C1931B" }
+                break;
+            default:
+                statusStyle = { color: "#C11B1B" }
+        }
+        return statusStyle ;
+
+    }
+    getTableRow(row) {
+        const statusStyle = this.getStatusColor(row.status);
+       
+        return <TableRow key={row.id}>
+            <TableCell>
+                <div className="d-flex row">
+                    <div className="  col-2">
+                        <img alt="..." style={{
+                            borderRadius: "50%",
+                            width: "50px",
+                            height: "50px"
+                        }}
+                            src="https://cars.usnews.com/pics/size/640x420/static/images/article/202002/128389/1_title_2020_kia_optima.jpg"
+                        />
+                    </div>
+                    <div className=" col-10" >
+                        {row.name}<br />
+                        <span style={statusStyle}>
+                            {row.status}
+                        </span>
+
+                    </div>
                 </div>
-                <div className=" col-10" >
-                    {row.name}<br />{row.status}
+            </TableCell>
+            <TableCell>{row.time}</TableCell>
+            <TableCell>{row.Total_Km}</TableCell>
+            <TableCell>{row.volume}</TableCell>
+            <TableCell>{row.cost}</TableCell>
+            <TableCell>
+                <div className="row">
+                    <div className="col-sm">
+                        <FormPopup data={row} />
+                    </div>
+                    <div className="col-sm">
+                        <FaRegTrashAlt style={{ color: "#FE4D5C", fontSize: "1.2rem" }} className="ml-3" onClick={() => this.handleDelete(row.id)} />
+                    </div>
                 </div>
-            </div>
-        </TableCell>
-        <TableCell>{row.time}</TableCell>
-        <TableCell>{row.Total_Km}</TableCell>
-        <TableCell>{row.volume}</TableCell>
-        <TableCell>{row.cost}</TableCell>
-        <TableCell>
-            <div className="row">
-                <div className="col-sm">
-                    <FormPopup data={row} />
-                </div>
-                <div className="col-sm">
-                    <FaRegTrashAlt style={{ color: "red", fontSize: "1.2rem" }} className="ml-3" onClick={() => this.handleDelete(row.id)} />
-                </div>
-            </div>
-        </TableCell>
-    </TableRow>
+            </TableCell>
+        </TableRow>
     }
     getTableData() {
         const page = this.state.page;
@@ -159,12 +181,13 @@ export default class VehicleTable extends Component {
                 j++;
                 subRows.push(
                     this.getTableRow(row)
-                   )
+                )
             }
+            const d = new Date(date)
             table.push(
                 <React.Fragment key={date}>
-                    <TableRow className="bg-light fw-bold h6 ">
-                        <TableCell  >{date}</TableCell>
+                    <TableRow className="bg-light fw-bold h6 dateRow" >
+                        <TableCell  >{d.toLocaleDateString(undefined, DATE_OPTIONS)}</TableCell>
                         <TableCell ></TableCell>
                         <TableCell ></TableCell>
                         <TableCell ></TableCell>

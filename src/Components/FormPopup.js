@@ -22,7 +22,7 @@ export default function FormPopup(props) {
 
     return (
         <div >
-            <FaEdit style={{ color: "#F4A460", fontSize: "1.2rem" }} onClick={handleClickOpen} />
+            <FaEdit style={{ color: "#FFAB2B", fontSize: "1.2rem" }} onClick={handleClickOpen} />
             <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
                 <DialogTitle id="form-dialog-title"></DialogTitle>
                 <DialogContent>

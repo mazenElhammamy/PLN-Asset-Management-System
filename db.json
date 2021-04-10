@@ -133,14 +133,13 @@
     },
     {
       "id": 19,
-      "date": "2020-08-20",
-      "name": "[0013]Daihatsu Xenia",
-      "status": "Out of service",
       "time": "10:57 PM",
-      "Total_Km": 70.5,
-      "volume": 62,
+      "status": "Out of service",
       "cost": "59409.431",
-      "fuelType": ""
+      "name": "[0013]Daihatsu Xenia",
+      "date": "2020-08-20",
+      "Total_Km": 70.9,
+      "volume": 62
     }
   ]
 }
